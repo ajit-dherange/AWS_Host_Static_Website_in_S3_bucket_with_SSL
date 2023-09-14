@@ -1,6 +1,6 @@
 # Host Static Website in AWS S3 bucket with SSL certificate 
 
-# 1. Hosting Internal HTTPS Static Websites with ALB, S3 and PrivateLink
+## 1. Hosting Internal HTTPS Static Websites with ALB, S3 and PrivateLink
 
 This solution leverages your existing private connection to the VPC and an Internal ALB to present the TLS certificate of the custom S3 bucket domain to the end-user. The ALB leverages AWS Certificate Manager (ACM) to present a valid certificate for the end-user, while maintaining a secure TLS connection to the trusted Amazon S3 VPC Endpoint. This enables the use of custom domain names for your static website.
 
