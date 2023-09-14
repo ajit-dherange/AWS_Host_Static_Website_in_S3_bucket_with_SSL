@@ -135,7 +135,7 @@ Configure your on-premises or private DNS entries to point to the Internal ALB. 
 You must use a resource with private access to your VPC to reach the Internal ALB. Connect to your resource and try navigating to your new private DNS entry. If you only have console access to your resource, then you can also use a cURL command to validate the private static website.
 
 
-## 2. Hosting Internal HTTPS Static Websites with ALB and S3 
+## 2. Hosting Public HTTPS Static Websites with ALB and S3 
 
 This solution leverages public internet connection to the VPC and an Internal ALB to present the TLS certificate of the custom S3 bucket domain to the end-user. The ALB leverages AWS Certificate Manager (ACM) to present a valid certificate for the end-user, while maintaining a secure TLS connection to the trusted Amazon S3 VPC Endpoint. This enables the use of custom domain names for your static website.
 
