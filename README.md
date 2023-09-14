@@ -134,6 +134,11 @@ Configure your on-premises or private DNS entries to point to the Internal ALB. 
 ### Step 6: Test your ALB
 You must use a resource with private access to your VPC to reach the Internal ALB. Connect to your resource and try navigating to your new private DNS entry. If you only have console access to your resource, then you can also use a cURL command to validate the private static website.
 
+### Cleanup
+To clean up, you can delete or revert the resources created in this guide in the following order:
+
+Route53 PHZ DNS entries, ALB, Load Balancer Target Group, The Amazon S3 VPC Endpoint, Any related Security Groups that you created, Your S3 bucket policy
+
 
 ## 2. Hosting Public HTTPS Static Websites with ALB and S3 
 
@@ -270,12 +275,9 @@ You must use a resource with private access to your VPC to reach the Internal AL
 ### Cleanup
 To clean up, you can delete or revert the resources created in this guide in the following order:
 
-Route53 PHZ DNS entries, ALB, Load Balancer Target Group, The Amazon S3 VPC Endpoint, Any related Security Groups that you created, Your S3 bucket policy
+Route53 HZ DNS entries, ALB, Load Balancer Target Group, The Amazon S3 VPC Endpoint, Any related Security Groups that you created, Your S3 bucket policy
 
 
-### Cleanup
-To clean up, you can delete or revert the resources created in this guide in the following order:
 
-Route53 PHZ DNS entries, ALB, Load Balancer Target Group, The Amazon S3 VPC Endpoint, Any related Security Groups that you created, Your S3 bucket policy
 
 
